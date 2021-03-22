@@ -12,4 +12,4 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
    </ThemeProvider>
   );
 }
-export default MyApp
+export default MyApp;

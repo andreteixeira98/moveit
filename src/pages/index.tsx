@@ -9,18 +9,7 @@ const  Home  : React.FC  =  ( ) =>  {
         </Head>
 
             <Container>
-                    <p>Structure for Projects in: </p>
-                    <ul>
-                        <li><a href="https://reactjs.org/">React</a></li>
-                        <li><a href="https://nextjs.org/">Next</a></li>
-                        <li><a href="https://www.typescriptlang.org/">TypeScript</a></li>
-                        <li><a href="https://styled-components.com/">Styled Components</a></li>
-                        <li><a href="https://eslint.org/">Eslint</a></li>
-                    </ul>
-                    <div>
-                        project setup made by &nbsp;
-                        <a href="https://github.com/andreteixeira98">  André Teixeira</a>
-                    </div>
+
             </Container>
     </>
   );
