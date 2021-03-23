@@ -5,6 +5,10 @@ export default createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: 600 16px 'Roboto', sans-serif;
+        line-height: 2;
+        letter-spacing:2px;
+
 
     }
 
@@ -38,7 +42,7 @@ body{
 }
 
 body, input, textarea, button{
-    font: 400 16px 'Della Respira', sans-serif;
+    font: 400 16px 'Roboto', sans-serif;
 }
 
 button{

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.header`
 
-    width:80vw;
+    width:80%;
     display: flex;
     flex-direction: row;
 
@@ -10,9 +10,10 @@ export const Container = styled.header`
     background: var(--background);
     color: var(--title);
 
-    font-family: 400 16px 'Della Respira', sans-serif;
+
     font-weight: 500;
     line-height: 2;
+    letter-spacing:2px;
 
     span.initialXp{
         margin-right: 0.5rem;
@@ -25,6 +26,8 @@ export const Container = styled.header`
         display: flex;
         flex-direction: row;
 
+        position: relative;
+
         margin-top: 2rem;
 
         border-radius: 5px;
@@ -33,16 +36,13 @@ export const Container = styled.header`
 
     }
     div span{
+        height:5px;
+        position:absolute;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
         background: var(--green);
-
-
         text-align:right;
 
-    }
-    div span p{
-        margin-right:-4%;
     }
 
     span.maxXp{

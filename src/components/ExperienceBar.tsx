@@ -1,12 +1,13 @@
 import React from 'react';
-import {Container} from '../styles/components/experienceBar';
+import {Container} from '../styles/components/ExperienceBar';
 
 const ExperienceBar: React.FC = ( ) =>{
     return (
        <Container>
            <span className="initialXp"> 0 xp</span>
            <div>
-               <span style={{width: '50%'}}> <p>300 xp</p></span>
+
+               <span style={{width: '50%'}}>300xp</span>
            </div>
             <span className="maxXp">600 xp</span>
        </Container>
