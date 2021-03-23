@@ -1,6 +1,7 @@
 import Container from "../styles/pages/Home";
 import  Head  from "next/head";
 import  React from "react";
+import ExperienceBar from "../components/ExperienceBar";
 const  Home  : React.FC  =  ( ) =>  {
   return (
     <>
@@ -9,7 +10,7 @@ const  Home  : React.FC  =  ( ) =>  {
         </Head>
 
             <Container>
-
+                <ExperienceBar />
             </Container>
     </>
   );
