@@ -9,7 +9,7 @@ import React from 'react';
         <Container>
             <img className="imageProfile" src={ProfileImage} alt=""/>
             <div>
-                <span>André Teixeira</span>
+                <strong>André Teixeira</strong>
                 <span>
                     <LevelImage /> &nbsp;
                     level

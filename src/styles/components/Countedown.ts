@@ -15,6 +15,7 @@ export const DivCounter = styled.div`
     align-items:center;
     justify-content:space-evenly;
 
+
     div{
         display:flex;
         flex-direction:row;
@@ -30,7 +31,8 @@ export const DivCounter = styled.div`
 
         justify-content:space-evenly;
         font-size: 8.5rem;
-        font-weight:bold 700;
+        font-weight:700;
+        color:var(--title);
 
     }
 
@@ -43,12 +45,12 @@ export const DivCounter = styled.div`
     }
     >strong{
         font-size: 8.5rem;
-        font-weight:600;
+        color:var(--title);
     }
 
 `;
 
-export const Button = styled.button`
+export const ButtonCountedownNoActive = styled.button`
     width:100%;
     height:4rem;
     text-align:center;
@@ -56,10 +58,38 @@ export const Button = styled.button`
     align-items:center;
     margin-top:2rem;
 
-    background: var(--blue-dark);
+    background: var(--blue);
     color: var(--white);
 
     border-radius:5px;
+    transition:background-color 0.5s;
 
     border:none;
+    &:hover {
+        background: var(--blue-dark);
+    }
+`;
+
+export const ButtonCountedownActive = styled.button`
+    width:100%;
+    height:4rem;
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+    margin-top:2rem;
+
+    background: var(--white);
+    color: var(--title);
+
+    border-radius:5px;
+    transition:background-color 0.5s;
+
+    border:none;
+    &:hover {
+        background: var(--red);
+        color: var(--white);
+    }
+
+
+
 `;

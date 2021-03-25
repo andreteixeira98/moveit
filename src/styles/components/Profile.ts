@@ -4,8 +4,7 @@ export const Container = styled.div`
 
     display:flex;
     flex-direction:row;
-    font-family: 16px 'Roboto', sans-serif;
-
+    align-items:center;
     line-height: 2;
     letter-spacing:2px;
 
@@ -25,14 +24,11 @@ export const Container = styled.div`
         margin-top: 0.5rem;
 
     }
-
-    div span:first-child{
-        font-weight:600;
-
+    div strong{
+        font-size:2rem;
     }
 
-    div span img{
-        width:30px;
-        height:30px
+    div span{
+        font-weight:400;
     }
 `;

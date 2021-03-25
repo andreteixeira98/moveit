@@ -11,7 +11,6 @@ const Container = styled.div`
   align-items: center;
   flex-direction: column;
 
-  font-family: bold 600 16px 'Roboto', sans-serif;
   color: var(--text);
 
   section{
@@ -27,6 +26,7 @@ const Container = styled.div`
     width:100%;
     height:100%;
     display:flex;
+
   }
 
   section div.leftColumn{
@@ -42,6 +42,7 @@ const Container = styled.div`
     flex-direction:column;
     align-items:center;
     justify-content:center;
+
 
   }
 
