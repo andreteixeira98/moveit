@@ -52,7 +52,7 @@ export const DivCounter = styled.div`
 
 export const ButtonCountedownNoActive = styled.button`
     width:100%;
-    height:4rem;
+    height:5rem;
     text-align:center;
     justify-content:center;
     align-items:center;
@@ -72,7 +72,7 @@ export const ButtonCountedownNoActive = styled.button`
 
 export const ButtonCountedownActive = styled.button`
     width:100%;
-    height:4rem;
+    height:5rem;
     text-align:center;
     justify-content:center;
     align-items:center;
@@ -82,7 +82,7 @@ export const ButtonCountedownActive = styled.button`
     color: var(--title);
 
     border-radius:5px;
-    transition:background-color 0.5s;
+    transition:background-color 0.2s;
 
     border:none;
     &:hover {
@@ -90,6 +90,25 @@ export const ButtonCountedownActive = styled.button`
         color: var(--white);
     }
 
+`;
 
+export const ButtonHasFinishedDisable= styled.button`
+    width:100%;
+    height:5rem;
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+    margin-top:2rem;
 
+    background: var(--white);
+    color: var(--text);
+    font-weight:600;
+
+    border-radius:5px;
+    transition:background-color 0.5s;
+
+    border:none;
+    &:hover {
+       cursor:not-allowed;
+    }
 `;

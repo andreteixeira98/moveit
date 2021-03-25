@@ -8,10 +8,9 @@ export const Container = styled.header`
 
     align-items:center;
     background: var(--background);
-    color: var(--title);
+    color: var(--text);
+    font-size:1rem;
 
-
-    font-weight: 500;
     line-height: 2;
     letter-spacing:2px;
 

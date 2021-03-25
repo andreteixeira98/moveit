@@ -12,7 +12,7 @@ import React from 'react';
                 <strong>André Teixeira</strong>
                 <span>
                     <LevelImage /> &nbsp;
-                    level
+                    level {1}
                 </span>
             </div>
         </Container>

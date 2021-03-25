@@ -1,39 +1,25 @@
-import React, { useEffect, useState } from 'react';
-import {ButtonCountedownActive, ButtonCountedownNoActive, Container, DivCounter} from '../styles/components/Countedown';
+import React, { useContext } from 'react';
+import {
+    ButtonCountedownActive,
+    ButtonCountedownNoActive,
+    ButtonHasFinishedDisable,
+    Container, DivCounter
+} from '../styles/components/Countedown';
 
-let countdownTimeout: NodeJS.Timeout;
+import {countedownContext } from '../context/CountedownContext';
 
 const Countedown:React.FC = () =>{
-
-    const [time,setTime] = useState(25*60);
-    const[isActive,setIsActive] = useState(false);
-    const[hasFinished, setHasFinished] = useState(false);
-    const minutes = Math.floor(time/60);
-    const seconds = Math.floor(time%60);
+    const {
+        seconds,
+        minutes,
+        isActive,
+        hasFinished,
+        handleCountedown,
+        resetCountedown
+    } = useContext(countedownContext);
 
     const [minutes1, minutes2] = String(minutes).padStart(2,'0').split('');
     const [seconds1, seconds2] = String(seconds).padStart(2,'0').split('');
-
-    function handleCountedown(){
-        setIsActive(!isActive);
-        console.log(isActive);
-    }
-    function resetCountedown(){
-        clearTimeout(countdownTimeout);
-        setTime(25*60);
-        setIsActive(false);
-    }
-
-    useEffect(() =>{
-        if(isActive && time > 0){
-            countdownTimeout = setTimeout(() =>{
-                setTime(time - 1);
-            },1000);
-        }else if(isActive && time == 0){
-            setHasFinished(true);
-        }
-    },[isActive,time]);
-
         return(
             <Container>
                 <DivCounter>
@@ -49,21 +35,30 @@ const Countedown:React.FC = () =>{
                         <strong>{seconds2}</strong>
                     </div>
                 </DivCounter>
-                {!isActive ?(
-                    <ButtonCountedownNoActive
-                        onClick={handleCountedown}
-                     >
-                        Iniciar Um Ciclo
-                    </ButtonCountedownNoActive>
+                {!hasFinished ?(
+                    <>
+                        {!isActive ?(
+                        <ButtonCountedownNoActive
+                            onClick={handleCountedown}
+                        >
+                            Iniciar Um Ciclo
+                        </ButtonCountedownNoActive>
+                        ):(
+                        <ButtonCountedownActive
+                            onClick={resetCountedown}
+                        >
+                            Abandonar Ciclo
+                        </ButtonCountedownActive>
+                        )}
+                    </>
                 ):(
-                    <ButtonCountedownActive
-                        onClick={resetCountedown}
-                    >
-                        Abandonar Ciclo
-                    </ButtonCountedownActive>
+                    <ButtonHasFinishedDisable disabled>
+                        Ciclo Encerrado
+                    </ButtonHasFinishedDisable>
                 )}
             </Container>
         );
 }
 
 export default Countedown;
+

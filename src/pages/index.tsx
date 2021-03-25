@@ -5,6 +5,7 @@ import ExperienceBar from "../components/ExperienceBar";
 import Profile from "../components/Profile";
 import CompleteChallenges from "../components/CompleteChallenges";
 import Countedown from "../components/Countedown";
+import ChallengeBox from "../components/ChallengeBox";
 const  Home  : React.FC  =  ( ) =>  {
   return (
     <>
@@ -22,7 +23,7 @@ const  Home  : React.FC  =  ( ) =>  {
                     </div>
 
                     <div className="rightColumn">
-                            <p>mndjdksdks</p>
+                        <ChallengeBox />
                     </div>
                 </section>
             </Container>
