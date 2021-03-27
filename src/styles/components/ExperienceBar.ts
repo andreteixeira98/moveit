@@ -25,8 +25,6 @@ export const Container = styled.header`
         display: flex;
         flex-direction: row;
 
-        position: relative;
-
         margin-top: 2rem;
 
         border-radius: 5px;
@@ -34,13 +32,27 @@ export const Container = styled.header`
 
 
     }
-    div span{
+    div span.initialAnimation{
+        transition: width 2s;
+    }
+
+
+    div span.currentXpHasNoFinishedAnimation{
         height:5px;
-        position:absolute;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
         background: var(--green);
-        text-align:right;
+        color: var(--text);
+
+        transition:background-color 2s;
+
+    }
+    div span.currentXpHasFinishedAnimation{
+        height:5px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background: var(--gray-line);
+        color:var(--text);
 
     }
 

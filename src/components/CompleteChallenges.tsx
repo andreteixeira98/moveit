@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import  { challengeBoxContext } from '../context/ChallengeBoxContext';
 
 import {Container} from '../styles/components/CompleteChallenges';
 
+
 const CompleteChallenges:React.FC = () =>{
+    const {challengesCompleted} = useContext(challengeBoxContext);
     return(
         <Container>
             <span >Desafios Completos</span>
-            <span>{5}</span>
+            <span>{challengesCompleted}</span>
         </Container>
     );
 }

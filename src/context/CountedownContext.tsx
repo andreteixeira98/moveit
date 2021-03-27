@@ -20,7 +20,7 @@ export const countedownContext = createContext({} as CountedownContextData);
 
 const CountedownProvider: React.FC= ({children}:CountedownProviderProps) =>{
 
-        const [time,setTime] = useState(0.1*60);
+        const [time,setTime] = useState(0.05*60);
         const[isActive,setIsActive] = useState(false);
         const[hasFinished, setHasFinished] = useState(false);
         const minutes = Math.floor(time/60);
@@ -31,9 +31,12 @@ const CountedownProvider: React.FC= ({children}:CountedownProviderProps) =>{
         }
         function resetCountedown(){
             clearTimeout(countdownTimeout);
-            setTime(0.1*60);
+            setTime(0.05*60);
             setIsActive(false);
+            setHasFinished(false);
         }
+
+
 
         useEffect(() =>{
             if(isActive && time > 0){

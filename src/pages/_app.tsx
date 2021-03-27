@@ -11,7 +11,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
    <ThemeProvider theme={theme}>
         <CountedownProvider>
             <ChallengeBoxProvider>
-                <Component {...pageProps} />
+                 <Component {...pageProps} />
             </ChallengeBoxProvider>
         </CountedownProvider>
          <GlobalStyle />

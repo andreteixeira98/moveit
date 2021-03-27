@@ -1,15 +1,30 @@
-import React from 'react';
+import React, { useContext, useEffect, useState } from 'react';
+import { challengeBoxContext } from '../context/ChallengeBoxContext';
 import {Container} from '../styles/components/ExperienceBar';
 
 const ExperienceBar: React.FC = ( ) =>{
+    const {
+        currentXp,
+        xpNextLevel,
+        percentXp,
+        hasFinishedAnimationChangeXp
+    } = useContext(challengeBoxContext);
+
     return (
        <Container>
            <span className="initialXp"> 0 xp</span>
            <div>
-
-               <span style={{width: '50%'}}>300xp</span>
+               <span
+                    className={
+                    hasFinishedAnimationChangeXp ?
+                    'currentXpHasFinishedAnimation': 'currentXpHasNoFinishedAnimation'}
+                    style={{width: `${percentXp}%`}}
+                >
+                    {currentXp} xp
+                </span>
            </div>
-            <span className="maxXp">600 xp</span>
+            <span className="maxXp">{xpNextLevel}xp</span>
+
        </Container>
     );
 }

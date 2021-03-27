@@ -5,9 +5,21 @@ import BodyImage from '../assets/icons/body.svg';
 import EyeImage from '../assets/icons/eye.svg';
 
 import {challengeBoxContext} from '../context/ChallengeBoxContext';
+import { countedownContext } from '../context/CountedownContext';
 
 const ChallengeBox: React.FC = ( ) =>{
-    const {activeChallenge} = useContext(challengeBoxContext);
+    const {activeChallenge, destroyChallenge, handleChallengeCompleted} = useContext(challengeBoxContext);
+    const {resetCountedown} = useContext(countedownContext);
+
+    function handleFaliedButton() {
+        resetCountedown();
+        destroyChallenge();
+    }
+
+    function handleSucceedButton() {
+        handleChallengeCompleted();
+        resetCountedown();
+    }
     return(
         <>
             {activeChallenge ? (
@@ -22,8 +34,19 @@ const ChallengeBox: React.FC = ( ) =>{
                     <strong>Novo Desafio</strong>
                     <p>{activeChallenge.description} </p>
                     <footer>
-                        <button className="FaliedButton">Falied</button>
-                        <button className="SucceedButton">Succeed</button>
+                        <button
+                            className="FaliedButton"
+                            onClick={handleFaliedButton}
+                        >
+                            Falied
+                        </button>
+
+                        <button
+                            className="SucceedButton"
+                            onClick={handleSucceedButton}
+                        >
+                            Succeed
+                        </button>
                     </footer>
              </ContainerActiveChallenge>
             ):(
