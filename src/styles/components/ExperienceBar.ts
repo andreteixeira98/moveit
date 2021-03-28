@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.header`
 
-    width:80%;
+    width:70%;
     display: flex;
     flex-direction: row;
 
@@ -12,7 +12,7 @@ export const Container = styled.header`
     font-size:1rem;
 
     line-height: 2;
-    letter-spacing:2px;
+    letter-spacing:1px;
 
     span.initialXp{
         margin-right: 0.5rem;
@@ -32,28 +32,25 @@ export const Container = styled.header`
 
 
     }
-    div span.initialAnimation{
-        transition: width 2s;
-    }
-
-
-    div span.currentXpHasNoFinishedAnimation{
+    div span{
         height:5px;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
+        text-align: right;
+        margin-right:0;
+
         background: var(--green);
         color: var(--text);
-
-        transition:background-color 2s;
-
     }
-    div span.currentXpHasFinishedAnimation{
-        height:5px;
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
-        background: var(--gray-line);
-        color:var(--text);
-
+    div span.InitialXpWidith{
+        transition: background-color 1s;
+        transition:width 1s;
+    }
+    div span.percentXpChangeForWidith100{
+        transition:width 1s;
+    }
+    div span.percentXpChangeForWidith0{
+        transition: background-color 1.5s;
     }
 
     span.maxXp{

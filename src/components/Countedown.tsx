@@ -41,7 +41,7 @@ const Countedown:React.FC = () =>{
                         <ButtonCountedownNoActive
                             onClick={handleCountedown}
                         >
-                            Iniciar Um Ciclo
+                            Iniciar um Ciclo
                         </ButtonCountedownNoActive>
                         ):(
                         <ButtonCountedownActive

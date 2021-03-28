@@ -6,6 +6,7 @@ import Profile from "../components/Profile";
 import CompleteChallenges from "../components/CompleteChallenges";
 import Countedown from "../components/Countedown";
 import ChallengeBox from "../components/ChallengeBox";
+import LevelUpMoldal from "../components/LevelUpModal";
 const  Home  : React.FC  =  ( ) =>  {
   return (
     <>
@@ -13,20 +14,23 @@ const  Home  : React.FC  =  ( ) =>  {
         <title>Homepage</title>
         </Head>
 
-            <Container>
-                <ExperienceBar />
-                <section>
-                    <div className="leftColumn">
-                          <Profile />
-                          <CompleteChallenges />
-                          <Countedown />
-                    </div>
 
-                    <div className="rightColumn">
-                        <ChallengeBox />
-                    </div>
-                </section>
-            </Container>
+                <Container>
+                    <ExperienceBar />
+                    <section>
+                        <div className="leftColumn">
+                            <Profile />
+                            <CompleteChallenges />
+                            <Countedown />
+                        </div>
+
+                        <div className="rightColumn">
+                            <ChallengeBox />
+                        </div>
+                    </section>
+                </Container>
+
+
     </>
   );
 }

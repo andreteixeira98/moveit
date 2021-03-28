@@ -14,7 +14,7 @@ const Container = styled.div`
   color: var(--text);
 
   section{
-    width:80%;
+    width:70%;
     margin-top:2rem;
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -32,8 +32,8 @@ const Container = styled.div`
   section div.leftColumn{
       display:flex;
       flex-direction:column;
-      justify-content:space-between;
       align-items:center;
+      justify-content:center;
 
   }
 

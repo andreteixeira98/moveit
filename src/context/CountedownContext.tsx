@@ -20,18 +20,18 @@ export const countedownContext = createContext({} as CountedownContextData);
 
 const CountedownProvider: React.FC= ({children}:CountedownProviderProps) =>{
 
-        const [time,setTime] = useState(0.05*60);
+        const [time,setTime] = useState(Math.floor(0.017*60));
         const[isActive,setIsActive] = useState(false);
         const[hasFinished, setHasFinished] = useState(false);
         const minutes = Math.floor(time/60);
-        const seconds = time%60;
+        const seconds = Math.floor(time%60);
 
         function handleCountedown(){
             setIsActive(!isActive);
         }
         function resetCountedown(){
             clearTimeout(countdownTimeout);
-            setTime(0.05*60);
+            setTime(Math.floor(0.017*60));
             setIsActive(false);
             setHasFinished(false);
         }

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
  import {Container }from '../styles/components/Profile';
  import ProfileImage from "../assets/profileImage2.jpeg";
  import LevelImage from '../assets/icons/level.svg';
@@ -6,6 +6,11 @@ import { challengeBoxContext } from '../context/ChallengeBoxContext';
 
  const Profile:React.FC = () =>{
      const {level} = useContext(challengeBoxContext);
+     const[tempLevel, setTempLevel] = useState(1);
+
+     setTimeout(() =>{
+       setTempLevel(level);
+     },1200);
 
     return(
         <Container>
@@ -14,7 +19,7 @@ import { challengeBoxContext } from '../context/ChallengeBoxContext';
                 <strong>André Teixeira</strong>
                 <span>
                     <LevelImage /> &nbsp;
-                    level {level}
+                    level {tempLevel}
                 </span>
             </div>
         </Container>

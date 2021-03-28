@@ -6,7 +6,7 @@ export default createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         line-height: 2;
-        letter-spacing:2px;
+        letter-spacing:1px;
 
 
     }

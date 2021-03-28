@@ -44,9 +44,6 @@ export const ContainerActiveChallenge = styled.div`
         border-bottom: 1px solid var(--gray-line);
         text-align:center;
     }
-    img{
-
-    }
     strong{
         font-size: 1.75rem;
         font-weight: bold 700;

@@ -30,7 +30,7 @@ export const DivCounter = styled.div`
         flex-direction:row;
 
         justify-content:space-evenly;
-        font-size: 8.5rem;
+        font-size: 7.5rem;
         font-weight:700;
         color:var(--title);
 
@@ -44,7 +44,7 @@ export const DivCounter = styled.div`
         border-left: 1px solid #f0f1f3;
     }
     >strong{
-        font-size: 8.5rem;
+        font-size: 7.5rem;
         color:var(--title);
     }
 
@@ -56,7 +56,7 @@ export const ButtonCountedownNoActive = styled.button`
     text-align:center;
     justify-content:center;
     align-items:center;
-    margin-top:2rem;
+    margin-top:1.5rem;
 
     background: var(--blue);
     color: var(--white);
@@ -76,7 +76,7 @@ export const ButtonCountedownActive = styled.button`
     text-align:center;
     justify-content:center;
     align-items:center;
-    margin-top:2rem;
+    margin-top:1.5rem;
 
     background: var(--white);
     color: var(--title);
@@ -98,11 +98,11 @@ export const ButtonHasFinishedDisable= styled.button`
     text-align:center;
     justify-content:center;
     align-items:center;
-    margin-top:2rem;
+    margin-top:1.5rem;
 
     background: var(--white);
     color: var(--text);
-    font-weight:600;
+    font-weight:700;
 
     border-radius:5px;
     transition:background-color 0.5s;

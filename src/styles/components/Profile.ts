@@ -25,7 +25,7 @@ export const Container = styled.div`
 
     }
     div strong{
-        font-size:2rem;
+        font-size:1.5rem;
     }
 
     div span{
