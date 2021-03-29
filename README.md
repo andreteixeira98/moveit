@@ -101,7 +101,7 @@ Technologies used to create the project
 <!-- LICENSE -->
 ## License
 
- Distributed under the MIT License. See [LICENSE](https://github.com/andreteixeira98/moveit.git/blob/main/LICENSE) for more information.
+ Distributed under the MIT License. See [LICENSE](https://github.com/andreteixeira98/moveit.git/blob/main/LICENSE.md) for more information.
 
 <!-- CONTACT -->
 ## Contact
