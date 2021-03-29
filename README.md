@@ -1,6 +1,4 @@
-# Setup-Project-Front-End
-Project setup with React, Next, TypeScript, Styled components and Eslint.
-
+# Moveit Project
 
 <!-- PROJECT SHIELDS -->
 [![Contributors][contributors-shield]][contributors-url]
@@ -44,9 +42,10 @@ Project setup with React, Next, TypeScript, Styled components and Eslint.
 <!-- ABOUT THE PROJECT -->
 ## About The Project
    <p>
-    Esse projeto foi criado visando ajudar pessoas que passam muito tempo no computador ou smartphone. Utilizando a técnica [Pomodoro](https://en.wikipedia.org/wiki/Pomodoro_Technique), a aplicação desenvolvida exibe um exercio parao usuario fazer em intervalos de 25 minutos. Esses exercicio podem ser para o corpo ou para os olhos.
+    Esse projeto foi criado visando ajudar pessoas que passam muito tempo no computador ou smartphone. Utilizando a técnica<a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank">Pomodoro</a>, a aplicação desenvolvida exibe um exercio parao usuario fazer em intervalos de 25 minutos. Esses exercicio podem ser para o corpo ou para os olhos.
     </p>
 
+[Link Project](https://moveitv2.vercel.app/)
 [![Product Name Screen Shot][product-screenshot]](https://moveitv2.vercel.app/)
 
 ### Built With
@@ -108,8 +107,6 @@ Technologies used to create the project
 
 André Teixeira - [Facebook](https://www.facebook.com/andreteixeiravaz) - andreteixeiracbjr@gmail.com
 
-Project Link: [Moveit](https://github.com/andreteixeira98/moveit.git)
-
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [Next-Images](https://www.npmjs.com/package/next-images)
@@ -127,7 +124,7 @@ Project Link: [Moveit](https://github.com/andreteixeira98/moveit.git)
 [issues-shield]: https://img.shields.io/github/issues/andreteixeira98/moveit.svg?style=for-the-badge
 [issues-url]: https://github.com/andreteixeira98/moveit/issues
 [license-shield]: https://img.shields.io/github/license/andreteixeira98/moveit.svg?style=for-the-badge
-[license-url]: https://github.com/andreteixeira98/moveit/blob/main/LICENSE
+[license-url]: https://github.com/andreteixeira98/moveit/blob/main/LICENSE.md
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/andre-teixeira-83a822186
 [product-screenshot]: /others/github/images/newChallenge.png
