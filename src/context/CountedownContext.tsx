@@ -18,7 +18,7 @@ interface CountedownProviderProps{
 }
 export const countedownContext = createContext({} as CountedownContextData);
 
-const CountedownProvider: React.FC= ({children}:CountedownProviderProps) =>{
+export default function CountedownProvider ({children}:CountedownProviderProps){
 
         const [time,setTime] = useState(Math.floor(0.017*60));
         const[isActive,setIsActive] = useState(false);
@@ -48,6 +48,8 @@ const CountedownProvider: React.FC= ({children}:CountedownProviderProps) =>{
             }
         },[isActive,time]);
 
+
+
     return(
         <countedownContext.Provider
             value={{
@@ -63,5 +65,3 @@ const CountedownProvider: React.FC= ({children}:CountedownProviderProps) =>{
         </countedownContext.Provider>
     );
 }
-
-export default CountedownProvider;

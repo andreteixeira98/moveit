@@ -4,6 +4,7 @@ import {Container} from '../styles/components/ExperienceBar';
 
 const ExperienceBar: React.FC = ( ) =>{
     const {
+        level,
         levelUpModal,
         resetLevelUpModal,
         currentXp,
@@ -12,15 +13,17 @@ const ExperienceBar: React.FC = ( ) =>{
 
     let percentXp = ((currentXp*100) / xpNextLevel);
     const[nameClassePercentXp, setNameClassePercentXp] = useState('InitialXpWidith');
-    const[tempCurrentXp, setTempCurrentXp] = useState(currentXp);
-    const[tempPercentXp, setTempPercentXp] = useState(percentXp);
+    const[tempCurrentXp, setTempCurrentXp] = useState(0);
+    const[tempPercentXp, setTempPercentXp] = useState(0);
+    const[tempXpNextLevel, setTemXpNextLevel] = useState(0);
 
 
    useEffect(() =>{
         if(levelUpModal){
             setTimeout(() =>{
                 setTempPercentXp(100);
-                setTempCurrentXp(xpNextLevel);
+                setTemXpNextLevel(Math.pow((level)*4, 2));
+                setTempCurrentXp(tempXpNextLevel);
             },200);
 
             setTimeout(() =>{
@@ -32,12 +35,14 @@ const ExperienceBar: React.FC = ( ) =>{
             setTimeout(() =>{
                 setTempPercentXp(percentXp);
                 setTempCurrentXp(currentXp);
+                setTemXpNextLevel(xpNextLevel);
             },2500);
             resetLevelUpModal();
         }else{
             setTimeout(() =>{
                 setTempPercentXp(percentXp);
                 setTempCurrentXp(currentXp);
+                setTemXpNextLevel(xpNextLevel);
             },200);
         }
    },[currentXp]);
@@ -54,16 +59,16 @@ const ExperienceBar: React.FC = ( ) =>{
 
     return (
        <Container>
-           <span className="initialXp"> 0xp</span>
+           <span className="initialXp"> &nbsp;&nbsp;0xp</span>
            <div>
                <span
                     className={`${nameClassePercentXp}`}
-                    style={{width: `${tempPercentXp}%`}}
+                    style={{width: `${tempPercentXp.toPrecision(3)}%`}}
                 >
                     {tempCurrentXp == 0 ? '' : `${tempCurrentXp}xp`}
                 </span>
            </div>
-            <span className="maxXp">{xpNextLevel}xp</span>
+            <span className="maxXp">{tempXpNextLevel}xp</span>
 
        </Container>
     );

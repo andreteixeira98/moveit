@@ -43,8 +43,8 @@ Project setup with React, Next, TypeScript, Styled components and Eslint.
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+    Esse projeto foi criado visando ajudar pessoas que passam muito tempo no computador ou smartphone. Utilizando a técnica [Pomodoro](https://en.wikipedia.org/wiki/Pomodoro_Technique), a aplicação desenvolvida exibe um exercio parao usuario fazer em intervalos de 25 minutos. Esses exercicio podem ser para o corpo ou para os olhos.
+[![Product Name Screen Shot][product-screenshot]](https://moveitv2.vercel.app/)
 
 ### Built With
 Technologies used to create the project
@@ -53,14 +53,13 @@ Technologies used to create the project
 * [Next](https://nextjs.org/)
 * [TypeScript](https://www.typescriptlang.org/)
 * [Styled-components](https://styled-components.com)
-* [Eslint](https://eslint.org/)
+* [ESlint](https://eslint.org/)
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+
 
 ### Prerequisites
 
@@ -71,7 +70,7 @@ To get a local copy up and running follow these simple example steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/andreteixeira98/Setup-Project-Front-End.git   ProjectName
+   git clone https://github.com/andreteixeira98/moveit.git  ProjectName
    ```
 2. Installation Project Dependencies
    ```sh
@@ -99,35 +98,33 @@ To get a local copy up and running follow these simple example steps.
 <!-- LICENSE -->
 ## License
 
- Distributed under the MIT License. See [LICENSE](https://github.com/andreteixeira98/Setup-Project-Front-End/blob/main/LICENSE) for more information.
+ Distributed under the MIT License. See [LICENSE](https://github.com/andreteixeira98/moveit.git/blob/main/LICENSE) for more information.
 
 <!-- CONTACT -->
 ## Contact
 
 André Teixeira - [Facebook](https://www.facebook.com/andreteixeiravaz) - andreteixeiracbjr@gmail.com
 
-Project Link: [Setup-Project-Front-End](https://github.com/andreteixeira98/Setup-Project-Front-End)
-
-Link Project on Notion: [Setup project on Notion](https://www.notion.so/setup-projeto-React-Next-Typescript-styled-component-Eslint-0ca093c3257b4e3b9d356acde33fe285)
-
+Project Link: [Moveit](https://github.com/andreteixeira98/moveit.git)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [Next-Images](https://www.npmjs.com/package/next-images)
+* [Js-Cookie](https://www.npmjs.com/package/js-cookie)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/andreteixeira98/Setup-Project-Front-End.svg?style=for-the-badge
-[contributors-url]: https://github.com/andreteixeira98/Setup-Project-Front-End/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/andreteixeira98/Setup-Project-Front-End.svg?style=for-the-badge
-[forks-url]: https://github.com/andreteixeira98/Setup-Project-Front-End/network/members
-[stars-shield]: https://img.shields.io/github/stars/andreteixeira98/Setup-Project-Front-End.svg?style=for-the-badge
-[stars-url]: https://github.com/andreteixeira98/Setup-Project-Front-End/stargazers
-[issues-shield]: https://img.shields.io/github/issues/andreteixeira98/Setup-Project-Front-End.svg?style=for-the-badge
-[issues-url]: https://github.com/andreteixeira98/Setup-Project-Front-End/issues
-[license-shield]: https://img.shields.io/github/license/andreteixeira98/Setup-Project-Front-End.svg?style=for-the-badge
-[license-url]: https://github.com/andreteixeira98/Setup-Project-Front-End/blob/main/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/andreteixeira98/moveit.svg?style=for-the-badge
+[contributors-url]: https://github.com/andreteixeira98/moveit/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/andreteixeira98/moveit.svg?style=for-the-badge
+[forks-url]: https://github.com/andreteixeira98/moveit/network/members
+[stars-shield]: https://img.shields.io/github/stars/andreteixeira98/moveit.svg?style=for-the-badge
+[stars-url]: https://github.com/andreteixeira98/moveit/stargazers
+[issues-shield]: https://img.shields.io/github/issues/andreteixeira98/moveit.svg?style=for-the-badge
+[issues-url]: https://github.com/andreteixeira98/moveit/issues
+[license-shield]: https://img.shields.io/github/license/andreteixeira98/moveit.svg?style=for-the-badge
+[license-url]: https://github.com/andreteixeira98/moveit/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/andre-teixeira-83a822186
 [product-screenshot]: /src/assets/icon2-computer.png

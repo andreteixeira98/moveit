@@ -7,7 +7,7 @@ import EyeImage from '../assets/icons/eye.svg';
 import {challengeBoxContext} from '../context/ChallengeBoxContext';
 import { countedownContext } from '../context/CountedownContext';
 
-const ChallengeBox: React.FC = ( ) =>{
+export default function ChallengeBox ( ){
     const {activeChallenge, destroyChallenge, handleChallengeCompleted} = useContext(challengeBoxContext);
     const {resetCountedown} = useContext(countedownContext);
 
@@ -59,5 +59,3 @@ const ChallengeBox: React.FC = ( ) =>{
         </>
     );
 }
-
-export default ChallengeBox;

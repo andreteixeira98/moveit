@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+    height: 100%;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -10,13 +11,14 @@ export const Container = styled.div`
 `;
 
 export const DivCounter = styled.div`
+    width:100%;
     display:flex;
     flex-direction:row;
     align-items:center;
     justify-content:space-evenly;
 
-
-    div{
+    >div{
+        max-height: 14rem;
         display:flex;
         flex-direction:row;
         justify-content:space-evenly;
@@ -25,8 +27,8 @@ export const DivCounter = styled.div`
         background: var(--white);
     }
     div strong{
-        flex:1;
         display:flex;
+       flex:1;
         flex-direction:row;
 
         justify-content:space-evenly;
@@ -56,7 +58,7 @@ export const ButtonCountedownNoActive = styled.button`
     text-align:center;
     justify-content:center;
     align-items:center;
-    margin-top:1.5rem;
+    margin-top:1.25rem;
 
     background: var(--blue);
     color: var(--white);
@@ -76,7 +78,7 @@ export const ButtonCountedownActive = styled.button`
     text-align:center;
     justify-content:center;
     align-items:center;
-    margin-top:1.5rem;
+    margin-top:1.25rem;
 
     background: var(--white);
     color: var(--title);
@@ -98,7 +100,7 @@ export const ButtonHasFinishedDisable= styled.button`
     text-align:center;
     justify-content:center;
     align-items:center;
-    margin-top:1.5rem;
+    margin-top:1.25rem;
 
     background: var(--white);
     color: var(--text);

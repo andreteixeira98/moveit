@@ -6,7 +6,7 @@ export const Container = styled.div`
     flex-direction:row;
     align-items:center;
     line-height: 2;
-    letter-spacing:2px;
+
 
 
 
@@ -14,6 +14,7 @@ export const Container = styled.div`
         width:5.5rem;
         height:5.5rem;
         border-radius:50%;
+
     }
 
     div{

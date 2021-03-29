@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.header`
 
-    width:70%;
+    width:78%;
     display: flex;
     flex-direction: row;
 
@@ -12,10 +12,9 @@ export const Container = styled.header`
     font-size:1rem;
 
     line-height: 2;
-    letter-spacing:1px;
 
     span.initialXp{
-        margin-right: 0.5rem;
+        margin-right: 0.25rem;
         margin-top: 2rem;
 
     }
@@ -55,7 +54,7 @@ export const Container = styled.header`
 
     span.maxXp{
         margin-top: 2rem;
-        margin-left: 0.5rem;
+        margin-left: 0.25rem;
     }
 
 

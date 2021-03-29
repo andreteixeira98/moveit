@@ -1,4 +1,7 @@
 import React, {createContext, ReactNode, useContext, useEffect, useState} from 'react';
+
+import Cookies from 'js-cookie';
+
 import challenges from '../data/challenges.json';
 
 import {countedownContext} from '../context/CountedownContext';
@@ -28,33 +31,30 @@ interface challengeBoxContextData{
 
 interface ChallengeBoxProviderProps{
     children:ReactNode;
-    activeChallenge:Challenge;
     level: number;
-    levelUpModal:boolean;
-    isLevelUpModalOpen:boolean;
     currentXp: number;
-    xpNextLevel:number;
     challengesCompleted:number;
 }
 export const challengeBoxContext = createContext( {}as challengeBoxContextData);
 
-export const ChallengeBoxProvider: React.FC = ({children}:ChallengeBoxProviderProps) =>{
+export function ChallengeBoxProvider({children,...res}:ChallengeBoxProviderProps){
 
     const {hasFinished} = useContext(countedownContext);
 
 
     const[activeChallenge, setActiveChallenge] = useState(null);
-    const [challengesCompleted, setChallengesCompleted] = useState(0);
-    const[level,setLevel] = useState(1);
+    const [challengesCompleted, setChallengesCompleted] = useState(res.challengesCompleted ?? 0);
+    const[level,setLevel] = useState(res.level ?? 1);
     const[levelUpModal, setLevelUpModal]  = useState(false);
     const[isLevelUpModalOpen,setIsLevelUpModalOpen ] = useState(false);
-    const[currentXp,setCurrentXp] = useState(0);
+    const[currentXp,setCurrentXp] = useState(res.currentXp ?? 0);
     const xpNextLevel = Math.pow((level + 1)*4, 2);
 
     function startNewChallenge(){
         const indexChallenge = Math.floor(Math.random() * challenges.length);
         const challenge = challenges[indexChallenge];
         setActiveChallenge(challenge as Challenge);
+
     }
 
     function handleChallengeCompleted(){
@@ -92,6 +92,12 @@ export const ChallengeBoxProvider: React.FC = ({children}:ChallengeBoxProviderPr
         setIsLevelUpModalOpen(false);
     }
 
+    useEffect(() =>{
+        Cookies.set('level', String(level),{expires:30});
+        Cookies.set('currentXp', String(currentXp),{expires:30});
+        Cookies.set('challengesCompleted', String(challengesCompleted),{expires:30});
+    },[level, currentXp, challengesCompleted]);
+
     useEffect(()=>{
         if(hasFinished){
             startNewChallenge();
@@ -120,5 +126,3 @@ export const ChallengeBoxProvider: React.FC = ({children}:ChallengeBoxProviderPr
         </challengeBoxContext.Provider>
     );
 }
-
-export default ChallengeBoxProvider;
