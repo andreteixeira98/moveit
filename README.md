@@ -42,7 +42,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
    <p>
-    Esse projeto foi criado visando ajudar pessoas que passam muito tempo no computador ou smartphone. Utilizando a técnica<a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank">Pomodoro</a>, a aplicação desenvolvida exibe um exercio parao usuario fazer em intervalos de 25 minutos. Esses exercicio podem ser para o corpo ou para os olhos.
+    Esse projeto foi criado visando ajudar pessoas que passam muito tempo no computador ou smartphone. Utilizando a técnica <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank">Pomodoro</a>, a aplicação desenvolvida exibe um exercio para o usuario fazer em intervalos de 25 minutos. Esses exercicio podem ser para o corpo ou para os olhos.
     </p>
 
 <h2 align="center"><a href="https://moveitv2.vercel.app/">Link Project</a></h2>
