@@ -12,7 +12,7 @@ Project setup with React, Next, TypeScript, Styled components and Eslint.
 
 <!-- PROJECT LOGO -->
 
-<img src="/src/assets/icon1-computer.png" />
+<img src="/others/github/images/screenshothome.png" />
 
 
 <!-- TABLE OF CONTENTS -->
@@ -43,7 +43,9 @@ Project setup with React, Next, TypeScript, Styled components and Eslint.
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+   <p>
     Esse projeto foi criado visando ajudar pessoas que passam muito tempo no computador ou smartphone. Utilizando a técnica [Pomodoro](https://en.wikipedia.org/wiki/Pomodoro_Technique), a aplicação desenvolvida exibe um exercio parao usuario fazer em intervalos de 25 minutos. Esses exercicio podem ser para o corpo ou para os olhos.
+    </p>
 [![Product Name Screen Shot][product-screenshot]](https://moveitv2.vercel.app/)
 
 ### Built With
@@ -127,4 +129,4 @@ Project Link: [Moveit](https://github.com/andreteixeira98/moveit.git)
 [license-url]: https://github.com/andreteixeira98/moveit/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/andre-teixeira-83a822186
-[product-screenshot]: /src/assets/icon2-computer.png
+[product-screenshot]: /others/github/images/newChallenge.png
