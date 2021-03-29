@@ -12,7 +12,7 @@ Project setup with React, Next, TypeScript, Styled components and Eslint.
 
 <!-- PROJECT LOGO -->
 
-<img src="/others/github/images/screenshothome.png" />
+<img src="/others/github/images/screenshothome.png" alt='home'/>
 
 
 <!-- TABLE OF CONTENTS -->
@@ -46,6 +46,7 @@ Project setup with React, Next, TypeScript, Styled components and Eslint.
    <p>
     Esse projeto foi criado visando ajudar pessoas que passam muito tempo no computador ou smartphone. Utilizando a técnica [Pomodoro](https://en.wikipedia.org/wiki/Pomodoro_Technique), a aplicação desenvolvida exibe um exercio parao usuario fazer em intervalos de 25 minutos. Esses exercicio podem ser para o corpo ou para os olhos.
     </p>
+
 [![Product Name Screen Shot][product-screenshot]](https://moveitv2.vercel.app/)
 
 ### Built With
