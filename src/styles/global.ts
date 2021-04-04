@@ -13,11 +13,11 @@ export default createGlobalStyle`
 
     :root{
         --white:#fff;
-        --background:#f2f3f5;
+        --background: ${props => props.theme.colors.background  };
         --gray-line:#DCDDE0;
-        --text:#666666;
+        --text: ${props => props.theme.colors.text  };
         --text-highlight:#b3b9ff;
-        --title:#2e384b;
+        --title:${props => props.theme.colors.title};
         --red:#e83f5b;
         --green:#4cd62b;
         --blue:#5965e0;

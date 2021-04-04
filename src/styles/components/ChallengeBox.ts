@@ -13,7 +13,7 @@ export const ContainerNoActiveChallenge = styled.div`
     font-weight:500;
     text-align:center;
 
-    background: var(--white);
+    background: var(--background);
     color: var(--text);
     p:last-child {
         font-size:1rem;
@@ -34,7 +34,7 @@ export const ContainerActiveChallenge = styled.div`
 
 
 
-    background: var(--white);
+    background: var(--background);
 
     span{
         width: 100%;

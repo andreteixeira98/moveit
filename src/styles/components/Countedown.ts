@@ -24,7 +24,7 @@ export const DivCounter = styled.div`
         justify-content:space-evenly;
         align-items:center;
 
-        background: var(--white);
+        background: var(--background);
     }
     div strong{
         display:flex;
@@ -39,11 +39,11 @@ export const DivCounter = styled.div`
     }
 
     div strong:first-child{
-        border-right: 1px solid #f0f1f3;
+        border-right: 1px solid var(--background)
     }
 
     div strong:last-child{
-        border-left: 1px solid #f0f1f3;
+        border-left: 1px solid var(--background)
     }
     >strong{
         font-size: 7.5rem;
@@ -102,7 +102,7 @@ export const ButtonHasFinishedDisable= styled.button`
     align-items:center;
     margin-top:1.25rem;
 
-    background: var(--white);
+    background: var(--background);
     color: var(--text);
     font-weight:700;
 

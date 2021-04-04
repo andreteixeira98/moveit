@@ -112,6 +112,7 @@ André Teixeira - [Facebook](https://www.facebook.com/andreteixeiravaz) - andret
 ## Acknowledgements
 * [Next-Images](https://www.npmjs.com/package/next-images)
 * [Js-Cookie](https://www.npmjs.com/package/js-cookie)
+* [React-Icons](https://react-icons.github.io/react-icons)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->

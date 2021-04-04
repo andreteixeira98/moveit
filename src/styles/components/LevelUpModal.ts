@@ -16,14 +16,14 @@ export const Overlay = styled.div`
 
 
 export const Container = styled.div`
-    background: var(--white);
+    background: var(--background);
     width: 100%;
     height: 25rem;
     max-width:25rem;
     padding: 2rem 3rem;
 
     border-radius: 5px;
-    box-shadow: 0 0 32rem rgba(0,0,0,0.05);
+    box-shadow: 0 0 32rem rgba(0,0,0,0.08);
 
     text-align: center;
     position: relative;
