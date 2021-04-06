@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext,memo } from 'react';
 
 import {Overlay, Container, ButtonClosed } from '../styles/components/LevelUpModal';
 import ImageClosed from '../assets/icons/close.svg';
@@ -27,4 +27,4 @@ const LevelUpMoldal:React.FC = () =>{
     );
 }
 
-export default LevelUpMoldal;
+export default memo(LevelUpMoldal);

@@ -1,4 +1,4 @@
-import React,{ useContext} from 'react';
+import React,{ useContext,memo} from 'react';
 import {ContainerActiveChallenge, ContainerNoActiveChallenge} from '../styles/components/ChallengeBox';
 import ImageLevelUp from '../assets/icons/level-up.svg';
 import BodyImage from '../assets/icons/body.svg';
@@ -7,7 +7,7 @@ import EyeImage from '../assets/icons/eye.svg';
 import {challengeBoxContext} from '../context/ChallengeBoxContext';
 import { countedownContext } from '../context/CountedownContext';
 
-export default function ChallengeBox ( ){
+function ChallengeBox (){
     const {activeChallenge, destroyChallenge, handleChallengeCompleted} = useContext(challengeBoxContext);
     const {resetCountedown} = useContext(countedownContext);
 
@@ -15,6 +15,7 @@ export default function ChallengeBox ( ){
         resetCountedown();
         destroyChallenge();
     }
+
 
     function handleSucceedButton() {
         handleChallengeCompleted();
@@ -59,3 +60,5 @@ export default function ChallengeBox ( ){
         </>
     );
 }
+
+export default memo(ChallengeBox);

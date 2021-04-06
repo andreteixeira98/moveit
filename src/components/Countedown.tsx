@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext,memo } from 'react';
 import {
     ButtonCountedownActive,
     ButtonCountedownNoActive,
@@ -60,5 +60,5 @@ const Countedown:React.FC = () =>{
         );
 }
 
-export default Countedown;
+export default memo(Countedown);
 

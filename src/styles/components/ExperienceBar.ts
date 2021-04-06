@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
+    position:absolute;
+    left:10%;
+    width:60%;
 
-    width:78%;
     display: flex;
     flex-direction: row;
 

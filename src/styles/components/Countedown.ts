@@ -27,8 +27,9 @@ export const DivCounter = styled.div`
         background: var(--background);
     }
     div strong{
+        max-height: 14rem;
         display:flex;
-       flex:1;
+        flex:1;
         flex-direction:row;
 
         justify-content:space-evenly;
@@ -39,11 +40,11 @@ export const DivCounter = styled.div`
     }
 
     div strong:first-child{
-        border-right: 1px solid var(--background)
+        border-right: 1px solid var(--gray-line);
     }
 
     div strong:last-child{
-        border-left: 1px solid var(--background)
+        border-left: 1px solid var(--gray-line);
     }
     >strong{
         font-size: 7.5rem;

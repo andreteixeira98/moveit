@@ -12,8 +12,12 @@ import Countedown from "../components/Countedown";
 import ChallengeBox from "../components/ChallengeBox";
 import CountedownProvider from "../context/CountedownContext";
 import {ChallengeBoxProvider} from "../context/ChallengeBoxContext";
-
-export default function Home() {
+import AlterTheme from "../components/AlterTheme";
+interface TypeProps{
+    isDark:boolean;
+    setIsDark:(isDark:boolean)=>void;
+}
+export default function Home(props:TypeProps) {
 
   return (
     <CountedownProvider>
@@ -27,7 +31,10 @@ export default function Home() {
                 <title>moveit | Inicio</title>
             </Head>
             <Container>
-                <ExperienceBar />
+                <div className="divContainerExperienceBar-AlterTheme">
+                    <ExperienceBar />
+                    <AlterTheme isDark={props.isDark} setIsDark={props.setIsDark}/>
+                </div>
                 <section>
                     <div className="leftColumn">
                         <Profile />

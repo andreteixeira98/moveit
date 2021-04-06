@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState,memo } from 'react';
  import {Container }from '../styles/components/Profile';
  import ProfileImage from "../assets/profileImage2.jpeg";
  import LevelImage from '../assets/icons/level.svg';
@@ -26,4 +26,4 @@ import { challengeBoxContext } from '../context/ChallengeBoxContext';
     );
  }
 
- export default Profile;
+ export default memo(Profile);

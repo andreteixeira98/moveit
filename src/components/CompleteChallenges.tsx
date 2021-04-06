@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext,memo } from 'react';
 import  { challengeBoxContext } from '../context/ChallengeBoxContext';
 
 import {Container} from '../styles/components/CompleteChallenges';
@@ -13,5 +13,5 @@ const CompleteChallenges:React.FC = () =>{
         </Container>
     );
 }
-export default CompleteChallenges;
+export default memo(CompleteChallenges);
 

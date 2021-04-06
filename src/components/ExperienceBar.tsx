@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState,memo } from 'react';
 import { challengeBoxContext } from '../context/ChallengeBoxContext';
 import {Container} from '../styles/components/ExperienceBar';
 
@@ -74,4 +74,4 @@ const ExperienceBar: React.FC = ( ) =>{
     );
 }
 
-export default ExperienceBar;
+export default memo(ExperienceBar);
