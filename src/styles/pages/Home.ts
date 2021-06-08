@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 const Container = styled.div`
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 
   margin-bottom: 5rem;
 
@@ -13,10 +13,12 @@ const Container = styled.div`
 
 
   color: var(--text);
-  >div{
+  header{
+    width: 100vw;
     margin-top:2rem;
     position: relative;
-    width: 100%;
+
+
     display: flex;
     flex-direction: row;
     align-items: center;

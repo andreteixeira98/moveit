@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-export const Container = styled.header`
+export const Container = styled.div`
     position:absolute;
     left:10%;
-    width:60%;
+    width:60vw;
 
     display: flex;
     flex-direction: row;

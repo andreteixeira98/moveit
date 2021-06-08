@@ -20,7 +20,7 @@ export const countedownContext = createContext({} as CountedownContextData);
 
 export default function CountedownProvider ({children}:CountedownProviderProps){
 
-        const [time,setTime] = useState(Math.floor(0.017*60));
+        const [time,setTime] = useState(Math.floor(25*60));
         const[isActive,setIsActive] = useState(false);
         const[hasFinished, setHasFinished] = useState(false);
         const minutes = Math.floor(time/60);

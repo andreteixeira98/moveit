@@ -31,10 +31,10 @@ export default function Home(props:TypeProps) {
                 <title>moveit | Inicio</title>
             </Head>
             <Container>
-                <div className="divContainerExperienceBar-AlterTheme">
+                <header className="divContainerExperienceBar-AlterTheme">
                     <ExperienceBar />
                     <AlterTheme isDark={props.isDark} setIsDark={props.setIsDark}/>
-                </div>
+                </header>
                 <section>
                     <div className="leftColumn">
                         <Profile />
