@@ -17,9 +17,10 @@ function AlterTheme(props:typeProps) {
         if(props.isDark) {
             Cookies.set('isDark', 'true',{expires:30});
         }else{
-            Cookies.set('isDark', '',{expires:30});
+            Cookies.set('isDark', '',{expires:29});
         }
     },[props.isDark]);
+
 
     return(
         <Container>
